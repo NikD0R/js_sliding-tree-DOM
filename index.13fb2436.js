@@ -1,0 +1,2 @@
+document.querySelectorAll("li").forEach(function(e){for(var n=e.childNodes,t=0;t<n.length&&"break"!==function(t){var r=n[t];if(1===r.nodeType&&"UL"===r.tagName){for(var a=document.createElement("span"),l=0;l<t;l++)a.appendChild(n[0]);return a.addEventListener("click",function(){"none"===r.style.display?r.style.display="":r.style.display="none"}),e.insertBefore(a,r),"break"}}(t);t++);});
+//# sourceMappingURL=index.13fb2436.js.map
