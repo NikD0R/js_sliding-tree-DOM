@@ -3,7 +3,7 @@
 const li = document.querySelectorAll('li');
 
 li.forEach((elem) => {
-  const children = elem.childNodes;
+  const children = Array.from(elem.childNodes);
 
   for (let i = 0; i < children.length; i++) {
     const node = children[i];
