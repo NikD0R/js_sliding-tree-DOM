@@ -9,11 +9,11 @@ li.forEach((elem) => {
     const node = children[i];
 
     if (node.nodeType === 1 && node.tagName === 'UL') {
+      const nodesBeforeUl = children.slice(0, i);
+
       const span = document.createElement('span');
 
-      for (let j = 0; j < i; j++) {
-        span.appendChild(children[0]);
-      }
+      nodesBeforeUl.forEach((n) => span.appendChild(n));
 
       span.addEventListener('click', () => {
         if (node.style.display === 'none') {
